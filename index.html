@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="heading">
+        <h1>Alarm Clock</h1>
+    </div>
+        <div id="current-time">
+            <span id="curr-hours"></span>
+            <span>:</span>
+            <span id="curr-mins"></span>
+            <span>:</span>
+            <span id="curr-secs"></span>
+            <span>:</span>
+            <span id="zone">PM</span>
+        </div>
+
+        <div id="set-time">
+            <label>
+                <input id="input-hours"  type="number" name="input-hours" min="0" max="12" maxlength="2" placeholder="Hours"  class="input-time">
+                <span>:</span>
+                <input id="input-mins"  type="number"  name="input-mins" min="0" max="60" maxlength="2"  placeholder="Mins" class="input-time">
+                <span>:</span>
+                <input id="input-secs"  type="number"  name="input-secs" min="0" max="60" maxlength="2"  placeholder="Secs" class="input-time">
+                <span>:</span>
+                <select name="time" id="input-zone">
+                    <option value="AM" value="1" id="AM">AM</option>
+                    <option value="PM" value="2" id="PM">PM</option>
+                </select>
+                <button id="set-btn"> <span>Set ALarm</span> </button>
+            </label>
+        </div>
+        <div id="alarm-display">
+            <h2>Alarm List</h2>
+        </div>
+    
+        <div>
+            <ul id="alarm-list">
+                <!-- <li>
+                <input class="strike" type="checkbox">
+                <span>Task1</span>
+                <button id="remove">remove</button>
+                </li> -->
+            </ul>
+        </div>
+
+</body>
+<script src="script.js"></script>
+</html>

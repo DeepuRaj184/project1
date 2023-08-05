@@ -1,0 +1,132 @@
+body{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-image: url('globe.jpg');  
+    background-repeat: no-repeat;
+    background-size: 1400px 1100px;
+    background-attachment: fixed;
+    background-position: center;
+    margin-top: 30px;
+    margin-left: 80px;
+}
+
+h1 {
+    color: #cfc547;
+    text-shadow: 10px 10px 25px rgb(81,67,21),
+    -10px 10px 25px rgb(81,67,21),
+    -10px -10px 25px rgb(81,67,21),
+    10px -10px 25px rgb(81,67,21);
+    font-family: 'Helvetica Neue', sans-serif; 
+    font-size: 55px; 
+    font-weight: bold; 
+    letter-spacing: -1px; 
+    line-height: 1; 
+    animation: flicker 1.5s infinite alternate;
+    
+}
+
+#current-time{
+    height: inherit;
+    width: 350px;
+    font-size: 2rem;
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 10%;
+    margin-left: 30px;
+    color: #fff;
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #0fa,
+      0 0 82px #0fa,
+      0 0 92px #0fa,
+      0 0 102px #0fa,
+      0 0 151px #0fa;
+
+}
+@keyframes flicker {
+    
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px #0fa,
+        0 0 80px #0fa,
+        0 0 90px #0fa,
+        0 0 100px #0fa,
+        0 0 150px #0fa;
+    
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+    }    
+  }
+
+#current-time span{
+    color: whitesmoke;
+}
+#set-time{
+    margin-top: 50px;
+    font-size: 1.5rem;
+    width: 800px;
+}
+
+.input-time{
+    background-color: whitesmoke;
+    height: 40px;
+    width: 80px;
+    
+}
+
+#input-hours{
+    border: 2px solid black;
+    
+}
+input{
+    font-size: 1.5rem;
+}
+#set-btn{
+    height: 50px;
+    width: 100px;
+    border-radius: 20%;
+}
+
+#set-btn span{
+    font-family: sans-serif;
+    font-size: 1rem;
+}
+
+#alarm-list li{
+    color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    font-size: 1.3rem;
+    padding: 5px;
+    letter-spacing: 4px;
+}
+#alarm-display{
+    color:whitesmoke;
+    height: 50px;
+    width: 150px;
+    letter-spacing: 2px;
+}
+#alarm-list li p{
+    margin-top: -4px;
+}
+
+#alarm-list li button{
+    margin-left: 30px;
+    font-weight: bold;
+    color: whitesmoke;
+    background-color: black;
+}
+
+#alarm-list li button:hover{
+    color: whitesmoke;
+    background-color: red;
+}
